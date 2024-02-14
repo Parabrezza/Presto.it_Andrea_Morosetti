@@ -1,0 +1,189 @@
+:root{
+    --color-P:rgba(9,89,166,255);
+    --color-S:rgba(176,181,179,255);
+    --color-A:darkkhaki;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-title{
+    font-family: 'Marhey', sans-serif;
+}
+
+.font-special{
+    font-family: 'Long Cang', cursive;
+}
+
+.color-P{
+    color: var(--color-P);
+}
+
+.color-S{
+    color: var(--color-S);
+}
+
+.color-A{
+    color: var(--color-A);
+}
+
+.bg-P{
+    background-color: var(--color-P);
+}
+
+.bg-A{
+    background-color: var(--color-A);
+}
+
+/* NAVBAR */
+
+.LogoPanda{
+    height: 50px;
+    width: 50px;
+}
+
+.nav-custom{
+    backdrop-filter: blur(10px);
+    background-color: rgba(176,181,179,0.5);
+}
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: var(--color-P);
+    transition: .5s;
+}
+
+.nav-link:hover::before{
+    width: 100%;
+}
+
+
+@media screen and (min-width: 750px) {
+    /* NAVBAR  */
+    .nav-custom{
+        margin: 5vh 20vw;
+        border: 2px solid var(--color-P);
+        border-radius: 10px;
+
+    }
+}
+
+.transition{
+    transition: 1s;
+}
+
+
+  /* HEADER */
+
+  button{
+    border-radius: 15px;
+    background-color: var(--color-P) ;
+    border-style: solid;
+    border-color: var(--color-S);
+    color: var(--color-S);
+  }
+
+  .bordoFraseEffetto{
+    border-bottom: 2px solid var(--color-P);
+  }
+  
+  /* SEZIONE ULTIMI ANNUNCI */
+.card:hover > div > img{
+    transform: scale(1.2);
+}
+
+.card{
+    border: 2px solid var(--color-P);
+    
+}
+
+  /* SEZIONE CATEGORIE  */
+
+.img-category{
+    border: 2px solid var(--color-P);
+    padding: 5px;
+    width: 100%;
+    border-radius: 50%;
+}    
+
+/* SEZIONE NUMERI */
+
+.boxNumeri{
+    background-color: var(--color-P);
+    height: 100px;
+    color: var(--color-S);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 2px solid var(--color-S);
+}
+
+
+.marginCustom{
+    margin-top: 70px;
+}
+
+/* SWIPER RECENSIONI */
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .boxRecensione{
+    height: 100%;
+    background-color: rgba(245, 245, 245, 0.801);
+    border-radius: 20px;
+  }
+
+  .img-recensione{
+    width: 70px !important;
+    border: 2px solid var(--color-P);
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+/* FOOTER */
+
+.fondoPagina{
+    background-color: var(--color-P);
+}
+
+.prova{
+    margin-top: 100px;
+}
+
+/* PAGINA PRODOTTI */
+
+.boxFiltri{
+    backdrop-filter: blur(10px);
+    background-color: var(--color-P);
+    border-radius: 20px;
+    position: sticky;
+    top: 100px;
+}
+

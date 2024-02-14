@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Presto.it</title>
+    <!-- Swiper CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- AoS CSS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Marhey:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- BOOTSRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- BOOTSTRAP ICONE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- MIO CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- INIZIO BARNAV -->
+    <nav class="navbar navbar-expand-lg sticky-top transition">
+      <div class="container-fluid">
+        <img class="LogoPanda" src="./immagini/LogoPanda.svg" alt="LogoPanda"> 
+        <a class="navbar-brand ms-2" href="#">Presto.it</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categorie
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Accessori</a></li>
+                <li><a class="dropdown-item" href="#">Arredamento</a></li>
+                <li><a class="dropdown-item" href="#">Musica</a></li>
+                <li><a class="dropdown-item" href="#">Reliquia</a></li>
+                <li><a class="dropdown-item" href="#">Gioielli</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Prodotti
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./prodotti.html">Lista Prodotti</a></li>
+                <li><a class="dropdown-item" href="#">Novità</a></li>
+                <li><a class="dropdown-item" href="#">Best Seller</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Prodotti in sconto</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Chi siamo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contatti</a>
+            </li>            
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3">
+              <a class="nav-link active p-0" href="#"><i class="bi bi-person-fill fs-4"></i></a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link active p-0" href="#"><i class="bi bi-cart3 fs-4"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>    
+    <!-- FINE BARNAV -->   
+      
+          <!-- SEZIONE PRODOTTI E FILTRI -->
+    <div class="container-fluid my-5">
+      <div class="row">
+          <!-- sezione filtri  -->
+          <div class="col-12 col-lg-3">
+            <h2 class="display-5 border-bottom text-center font-special color-P">FILTRI</h2>
+            <!-- filtro categoria  -->
+            <div class="boxFiltri p-5">
+              <h5 class="my-4 font-title color-S">Filtro Categoria</h5>
+              <div id="radioWrapper">
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="All" checked>
+                      <label class="form-check-label color-S" for="All">
+                        Tutte le categorie
+                      </label>
+                  </div>
+              </div>
+              <!-- filtro prezzo -->
+              <div>
+                  <h5 class="my-4 font-title color-S">Filtro per Prezzo</h5>
+                  <label id="priceLabel" for="inputPrice" class="form-label color-S"></label>
+                  <input type="range" class="form-range" id="inputPrice" min="" max="" value="" style="background-color: color-S;">
+              </div>
+              <!-- filtro per Parola  -->
+              <div class="my-4">
+                  <label for="inputWord" class="font-title color-S h5">Filtro perParola</label>
+                  <input type="text" class="form-control" id="inputWord" placeholder="Search">
+              </div>
+            </div>
+          </div>
+          <!-- sezione prodotti  -->
+          <div class="col-12 col-lg-9">
+              <h2 class="display-5 border-bottom text-center font-special color-P ">PRODOTTI</h2>
+              <div class="container-fluid">
+                  <div id="prodottiWrapper" class="row">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- fine SEZIONE PRODOTTI E FILTRI -->
+
+    <!-- Swiper JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- AoS JS  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Inizializzazione AoS  -->
+    <script>
+      AOS.init();
+    </script>
+    <!-- BOOTSRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- MIO JS -->
+    <script src="prodotti.js"></script>
+    </body>
+    </html>
